@@ -1,0 +1,36 @@
+﻿<Window x:Class="ExpenceBook.Login"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Login" Height="340" Width="546">
+
+    <Grid VerticalAlignment="Center" HorizontalAlignment="Center">
+        <Image Margin="-83,0,-79,0" Source="Financial-Services.jpeg" Width="546" Stretch="Fill"/>
+
+
+        <TextBlock Height="38" HorizontalAlignment="Left" Margin="151,10,0,0" Name="LoginHeading" Text="Login" VerticalAlignment="Top" FontSize="22" FontStretch="ExtraCondensed" RenderTransformOrigin="2.854,0.422" Foreground="Red" Width="59" Background="Black"/>
+
+        <TextBlock Height="50" HorizontalAlignment="Left" Margin="-5,64,0,0" x:Name="textBlockHeading" VerticalAlignment="Top" FontSize="12" FontStyle="Italic" Padding="5" Foreground="White"><!--line break--><Run Text="         Use Your Registered Email &amp; Password to Access Our Services ">
+        		<Run.Background>
+        			<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+        				<GradientStop Color="#FFFB0909" Offset="0"/>
+        				<GradientStop Color="#FF131313" Offset="1"/>
+        			</LinearGradientBrush>
+        		</Run.Background>
+        	</Run></TextBlock>
+
+
+
+        <TextBlock Height="26" HorizontalAlignment="Left" Margin="-17,116,0,0" Name="textBlock1" Text="Email" VerticalAlignment="Top" Width="88" Background="Red" Foreground="#FFF9F8F8" FontSize="18" />
+
+        <TextBlock Height="27" HorizontalAlignment="Left" Margin="-16,176,0,0" Name="textBlock2" Text="Password" VerticalAlignment="Top" Width="92" Background="#FFFB0707" Foreground="#FFFDFDFD" FontSize="18" />
+
+        <TextBox Height="27" HorizontalAlignment="Left" Margin="71,115,0,0" Name="textBoxEmail" VerticalAlignment="Top" Width="294" />
+
+        <PasswordBox Height="27" HorizontalAlignment="Left" Margin="71,176,0,0" Name="passwordBox1" VerticalAlignment="Top" Width="294" />
+
+        <Button Content="Login" Height="27" HorizontalAlignment="Left" Margin="71,226,0,0" Name="button1" VerticalAlignment="Top" Width="124" Click="button1_Click" />
+
+        <TextBlock Height="23" HorizontalAlignment="Left" x:Name ="errormessage" VerticalAlignment="Top" Width="247" Margin="118,253,0,0"  OpacityMask="Crimson" Foreground="#FFE5572C"  />
+        <Button Content="Register" HorizontalAlignment="Left" Margin="231,226,0,0" VerticalAlignment="Top" Width="113" Height="27" Click="buttonRegister_Click"/>
+    </Grid>
+</Window>
